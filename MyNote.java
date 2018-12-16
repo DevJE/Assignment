@@ -2,7 +2,7 @@ package silsub1;
 
 import java.util.*;
 import java.io.*;
-
+//2018.12.16
 public class MyNote {
 	private Scanner sc = new Scanner(System.in);
 	
@@ -15,23 +15,23 @@ public class MyNote {
 		String fn = null;
 		
 		StringBuilder sb = new StringBuilder();
-		System.out.println("ÆÄÀÏ¿¡ ÀúÀåÇÒ ³»¿ëÀ» ÀÔ·ÂÇÏ½Ã¿À.");
+		System.out.println("íŒŒì¼ì— ì €ì¥í•  ë‚´ìš©ì„ ì…ë ¥í•˜ì‹œì˜¤.");
 		String typing = null;
 	
 			while(!(typing = sc.nextLine()).equals("exit")) {
 				sb.append(typing + "\n");
 				}
 		
-		System.out.print("ÀúÀåÇÏ½Ã°Ú½À´Ï±î? (y/n) : ");
+		System.out.print("ì €ì¥í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (y/n) : ");
 		/*char ch = sc.next().toUpperCase().charAt(0);*/
 		if(sc.next().toUpperCase().charAt(0) == 'Y') {
-			System.out.print("ÀúÀåÇÒ ÆÄÀÏ¸í(txt) : ");
+			System.out.print("ì €ì¥í•  íŒŒì¼ëª…(txt) : ");
 			fn = sc.next();
 		}
 		
 		try(BufferedWriter bw = new BufferedWriter(new FileWriter(fn))) {
 		
-		System.out.println(fn + "ÆÄÀÏ¿¡ ¼º°øÀûÀ¸·Î ÀúÀåÇÏ¿´½À´Ï´Ù.");
+		System.out.println(fn + "íŒŒì¼ì— ì„±ê³µì ìœ¼ë¡œ ì €ì¥í•˜ì˜€ìŠµë‹ˆë‹¤.");
 		bw.write(sb.toString());
 		bw.flush();
 		
@@ -42,7 +42,7 @@ public class MyNote {
 	}
 	
 	public void fileOpen() {
-		System.out.print("¿­±âÇÒ ÆÄÀÏ¸í : ");
+		System.out.print("ì—´ê¸°í•  íŒŒì¼ëª… : ");
 		String fn = sc.next();
 		
 		try(BufferedReader brr = new BufferedReader(new FileReader(fn))) {
@@ -53,7 +53,7 @@ public class MyNote {
 			while((str = brr.readLine()) != null) {
 			sb.append(str + "\n");
 			}
-			System.out.println("==== ³»¿ë ====");
+			System.out.println("==== ë‚´ìš© ====");
 			System.out.println(sb.toString());
 			
 		} catch(IOException e) {
@@ -62,23 +62,23 @@ public class MyNote {
 	}
 	
 	public void fileEdit() {
-		System.out.print("¼öÁ¤ÇÒ ÆÄÀÏ¸í : ");
+		System.out.print("ìˆ˜ì •í•  íŒŒì¼ëª… : ");
 		String fn = sc.next();
 		
 		try(BufferedWriter bw = new BufferedWriter(new FileWriter(fn, true));) {
 			
 			StringBuilder sb = new StringBuilder();
-			System.out.println("ÆÄÀÏ¿¡ Ãß°¡ÇÒ ³»¿ëÀ» ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("íŒŒì¼ì— ì¶”ê°€í•  ë‚´ìš©ì„ ì…ë ¥í•˜ì„¸ìš”.");
 			String typing = null;
 			
 			while(!(typing = sc.nextLine()).equals("exit")) {
 				sb.append(typing + "\n");
 			}
 			
-			System.out.print("º¯°æµÈ ³»¿ëÀ» ÆÄÀÏ¿¡ Ãß°¡ÇÏ½Ã°Ú½À´Ï±î? (y/n) : ");
+			System.out.print("ë³€ê²½ëœ ë‚´ìš©ì„ íŒŒì¼ì— ì¶”ê°€í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (y/n) : ");
 			if(sc.next().toUpperCase().charAt(0) == 'Y') {
 				bw.write(sb.toString());
-				System.out.println(fn + " ÆÄÀÏÀÇ ³»¿ëÀÌ º¯°æµÇ¾ú½À´Ï´Ù.");
+				System.out.println(fn + " íŒŒì¼ì˜ ë‚´ìš©ì´ ë³€ê²½ë˜ì—ˆìŠµë‹ˆë‹¤.");
 			}
 			
 			System.out.println();
