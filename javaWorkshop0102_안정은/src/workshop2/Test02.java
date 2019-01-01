@@ -14,7 +14,7 @@ public class Test02 {
 			System.out.print("@");
 			inx++;
 		}*/
-		//for¹®À¸·Î º¯°æÇÏ±â
+		//forë¬¸ìœ¼ë¡œ ë³€ê²½í•˜ê¸°
 		for(int inx = 0; inx <=6; inx ++) {
 			for(int jnx = 0; jnx <= inx; jnx ++) {
 				System.out.print("*");
