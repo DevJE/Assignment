@@ -15,7 +15,7 @@ public class Test01 {
 			
 			x ++;
 		}
-		System.out.printf("\n�ִ밪 : %d\n�ּҰ� : %d", m1, m2);
+		System.out.printf("\n최대값 : %d\n최소값 : %d", m1, m2);
 	}
 
 }
