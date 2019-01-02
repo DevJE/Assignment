@@ -10,7 +10,7 @@ public class Test02 {
 		if(x > 4 && x < 11)
 			System.out.println(new Calc().calculate(x));
 		else			
-			System.out.println("´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+			System.out.println("ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 			
 		
 	}
