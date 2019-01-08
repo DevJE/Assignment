@@ -7,10 +7,9 @@ public class Test04 {
 		int x = Integer.parseInt(args[0]);
 		
 		if(x > 4 && x < 11) 
-			System.out.println("°á°ú : " + new Calc().calculate(x));
+			System.out.println("ê²°ê³¼ : " + new Calc().calculate(x));
 		else
-			System.out.println("´Ù½ÃÀÔ·ÂÇØÁÖ¼¼¿ä");
-
+			System.out.println("ë‹¤ì‹œìž…ë ¥í•´ì£¼ì„¸ìš”");
 	}
 
 }
