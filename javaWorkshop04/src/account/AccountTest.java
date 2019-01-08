@@ -10,7 +10,7 @@ public class AccountTest {
 		account.deposit(20000);
 		
 		System.out.println(account.getAccount());
-		System.out.println("ÀÌÀÚ : " + account.calculateInterest());
+		System.out.println("ì´ì : " + account.calculateInterest());
 	}
 
 }
