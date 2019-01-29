@@ -17,7 +17,7 @@ public class ProductMenu {
 		boolean set = true;
 		while(set) {
 			System.out.println("==== 제품 관리 프로그램 ====");
-			System.out.println("1.  추가" +
+			System.out.println("1. 제품 추가" +
 					 "\n2. 제품 가격 수정" + 
 					 "\n3. 제품 삭제" +
 					 "\n4. 제품 아이디로 조회" +
