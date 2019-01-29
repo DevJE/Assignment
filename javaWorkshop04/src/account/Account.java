@@ -35,7 +35,7 @@ public class Account {
 	
 	public String getAccount() {
 		return
-			"°èÁÂÁ¤º¸ : " + this.account + " ÇöÀçÀÜ¾× : " + this.balance;
+			"ê³„ì¢Œì •ë³´ : " + this.account + " í˜„ì¬ì”ì•¡ : " + this.balance;
 	}
 	
 	public void deposit(int money) {
